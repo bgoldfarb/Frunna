@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-ai-phone",
-    "slug": "expo-ai-phone",
+    "name": "Frunna",
+    "slug": "frunna",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,7 +13,17 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.briancodes93.expo-ai-phone",
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "This app reads your step count to generate on-device wellness insights with Apple Intelligence.",
+        "NSCalendarsUsageDescription": "This app syncs your generated running plan to your calendar.",
+        "NSCalendarsWriteOnlyAccessUsageDescription": "This app syncs your generated running plan to your calendar.",
+        "NSCalendarsFullAccessUsageDescription": "This app syncs your generated running plan to your calendar."
+      },
+      "entitlements": {
+        "com.apple.developer.healthkit": true
+      }
     },
     "android": {
       "adaptiveIcon": {
